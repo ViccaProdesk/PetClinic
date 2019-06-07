@@ -18,7 +18,7 @@ function fetchData(url, method, body) {
 }
 
 
-function getOWners() {
+function getAllOwners() {
     return fetchData(`http://localhost:9966/petclinic/api/owners`, 'GET')
         .then((req) => {
             return JSON.parse(req.responseText);
