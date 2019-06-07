@@ -2,6 +2,7 @@ function getAllVets() {
     return fetchData(`http://localhost:9966/petclinic/api/vets`, 'GET')
         .then((req) => {
             return JSON.parse(req.responseText);
+            console.log
         });
 }
 
