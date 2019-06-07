@@ -1,0 +1,33 @@
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+</head>
+
+<body>
+	<div align="center">
+		<h1>Find out your scheduled visits:</h1>
+	</div>
+	<br>
+	<table align="center" style="width:40%">
+		<tr class="table-danger" align="center">
+			<th>Pet Name</th>
+		</tr>
+		<tr class="table-info" align="center">
+			<td><input id="petInput" type="text" /></td>
+		</tr>
+	</table>
+	</div>
+	<div align="center">
+		<br>
+		<button class="btn btn-primary btn-lg" onclick="findPet()">Find Visits</button>
+	</div>
+
+</body>
+<script src="requestData.js"></script>
+<script src="petRestController.js"></script>
+<script src="petVisits.js"></script>
+
+</html>

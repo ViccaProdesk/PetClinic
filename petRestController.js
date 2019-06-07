@@ -1,8 +1,5 @@
 function getAllPets() {
-    fetchData(`http://localhost:9966/petclinic/api/pets`, 'GET').then((req) => {
-        response = JSON.parse(req.responseText);
-        console.log(response);
-    });
+    return fetchData(`http://localhost:9966/petclinic/api/pets`, 'GET');
 }
 
 function getPatientTypes() {
@@ -12,14 +9,12 @@ function getPatientTypes() {
     });
 }
 
-function getPetById() {
-    fetchData(`http://localhost:9966/petclinic/api/pets/${document.getElementById()}`, 'GET').then((req) => {
+function getPetById(htmlId) {
+    fetchData(`http://localhost:9966/petclinic/api/pets/${document.getElementById(htmlId)}`, 'GET').then((req) => {
         response = JSON.parse(req.responseText);
         console.log(response);
     });
 }
 
 
-getAllPets();
 getPatientTypes();
-getPetById()
