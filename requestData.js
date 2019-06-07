@@ -16,11 +16,3 @@ function fetchData(url, method, body) {
         req.send(JSON.stringify(body));
     });
 }
-
-
-function getAllOwners() {
-    return fetchData(`http://localhost:9966/petclinic/api/owners`, 'GET')
-        .then((req) => {
-            return JSON.parse(req.responseText);
-        });
-}
