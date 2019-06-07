@@ -1,4 +1,4 @@
-function FetchData(url, method, body) {
+function fetchData(url, method, body) {
 
     return new Promise((resolve, reject) => {
         const req = new XMLHttpRequest();
